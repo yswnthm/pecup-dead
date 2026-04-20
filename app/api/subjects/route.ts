@@ -35,9 +35,8 @@ export async function GET(request: Request) {
           branch = branch || String(profile.branch)
         }
       }
-      if (!semester) {
-        // Default to Semester 1 when not specified
-        semester = '1'
+        // Default to Semester 2 (current global semester)
+        semester = '2'
       }
     }
 

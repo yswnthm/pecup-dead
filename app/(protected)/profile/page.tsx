@@ -66,7 +66,7 @@ export default function ProfilePage() {
         body: JSON.stringify({
           branchCode: branch,
           yearNumber: year,
-          semesterNumber: 1 // Default to semester 1
+          semesterNumber: 2 // Currently 2nd semester for all years
         }),
       })
 

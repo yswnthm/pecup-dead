@@ -10,13 +10,13 @@ interface MappingResult {
  * Maps frontend branch code, year, and semester to database UUIDs
  * @param branchCode - Branch code like 'CSE', 'AIML', etc.
  * @param yearNumber - Academic year number (1-4) or batch year (2023, 2024, etc.)
- * @param semesterNumber - Semester number (1 or 2), defaults to 1
+ * @param semesterNumber - Semester number (1 or 2), defaults to 2
  * @returns Promise resolving to database IDs
  */
 export async function mapProfileDataToIds(
   branchCode: string,
   yearNumber: number,
-  semesterNumber: number = 1
+  semesterNumber: number = 2
 ): Promise<MappingResult> {
   const supabase = createSupabaseAdmin();
 

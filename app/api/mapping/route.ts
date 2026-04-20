@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
   }
 
-  const { branchCode, yearNumber, semesterNumber = 1 } = body;
+  const { branchCode, yearNumber, semesterNumber = 2 } = body;
 
   if (!branchCode || typeof branchCode !== 'string') {
     return NextResponse.json({ error: 'Branch code is required and must be a string' }, { status: 400 });
